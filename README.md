@@ -8,4 +8,6 @@
 
 ### Task pertemuan 6 - CRUD laravel 9 Rest API Part II
 
-### Task pertemuan 9 - Basi CRUD nodeJS using array (Without Database)
+### Task pertemuan 9 - Basic CRUD nodeJS using array (Without Database)
+
+### Task pertemuan 10 - Basic Javascript concurrency
