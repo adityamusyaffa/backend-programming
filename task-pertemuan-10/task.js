@@ -15,14 +15,20 @@ const download = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const result = "windows-10.exe";
-      resolve(result);
+      resolve(showDownload(result));
     }, 0);
   })
 };
 
-// Promise using then
-download().then(showDownload);
-
+// Promise using async-await
+const main = async () => {
+  try {
+    return await download();
+  } catch (rejected) {
+    console.log(rejected);
+  }
+}
+main();
 /**
  * TODO:
  * - Refactor callback ke Promise atau Async Await
