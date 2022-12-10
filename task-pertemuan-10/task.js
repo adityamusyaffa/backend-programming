@@ -11,16 +11,17 @@ const showDownload = result => {
  * Fungsi untuk download file
  * @param {function} callback - Function callback show
  */
-const download = callShowDownload => {
+const download = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const result = "windows-10.exe";
-      callShowDownload(result);
-    }, 3000);
+      resolve(result);
+    }, 0);
   })
 };
 
-download(showDownload);
+// Promise using then
+download().then(showDownload);
 
 /**
  * TODO:
