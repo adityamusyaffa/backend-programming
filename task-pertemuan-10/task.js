@@ -16,7 +16,7 @@ const download = () => {
     setTimeout(() => {
       const result = "windows-10.exe";
       resolve(showDownload(result));
-    }, 0);
+    }, 3000);
   })
 };
 
