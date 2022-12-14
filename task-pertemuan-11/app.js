@@ -7,7 +7,8 @@ const app = express();
 
 // Menggunakan middleware
 app.use(express.json());
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }))
 
 // Menggunakan routing (router)
 app.use(router);
